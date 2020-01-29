@@ -112,7 +112,7 @@ class SplitCoordFounder:
                     selected_ids += [col_id]
                     cv2.line(copy_im, (col_id, 0), (col_id, h), 127, thickness=1)
 
-            copy_im = cv2.dilate(copy_im, kernel=np.ones(shape=(1, self.LINE_POS_STEP * 2), dtype=np.uint8))
+            copy_im = cv2.dilate(copy_im, kernel=np.ones(shape=(1, self.LINE_POS_STEP), dtype=np.uint8))
 
             #
             label = measure.label(copy_im, neighbors=8, background=0)
