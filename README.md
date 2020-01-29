@@ -20,7 +20,7 @@ im = cv2.imread(im_fn)
 founder = SplitCoordFounder()
 
 # running
-split_coord, area, direction = founder.process(, direction=None) # you can specify the direction ['h','w'] to get more accurate result
+split_coord, area, direction = founder.process(im, direction=None) # you can specify the direction ['h','w'] to get more accurate result
 
 if direction == 'w':
     col = split_coord
