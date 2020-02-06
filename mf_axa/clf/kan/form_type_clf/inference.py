@@ -1,3 +1,6 @@
+import sys, os
+sys.path.append(os.path.dirname(__file__))
+
 from train_xentropy import data_transforms
 from torchvision.models import resnet34
 import torch.nn as nn
