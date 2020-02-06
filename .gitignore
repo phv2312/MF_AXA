@@ -1,0 +1,4 @@
+/.idea
+mf_axa/clf/__pycache__/
+mf_axa/clf/dataset
+mf_axa/clf/saved_models
